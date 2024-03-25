@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.DetailPerkembanganActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kedua">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btnKembali"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/kembali_icon"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Detail Jadwal Panen"
+                android:textColor="@color/white"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="artikel">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp">
+            <TextView
+                android:id="@+id/txt_id_jadwal_panen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID 00019102023"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txt_tanggal_jadwal_panen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Tanggal : 19 - 10 - 2023"
+                android:fontFamily="@font/poppins" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Detail"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Ayam : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_jumlah_ayam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="600 Ekor"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bobot Ayam : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_bobot_panen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="220 gram"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Sopir : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        app:cardCornerRadius="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_nama_sopir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Malik"
+                        android:textColor="@color/black"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nopol : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_nopol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="P 1111 HQ"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Peternakan : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_nama_peternakan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="peternakan erik"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

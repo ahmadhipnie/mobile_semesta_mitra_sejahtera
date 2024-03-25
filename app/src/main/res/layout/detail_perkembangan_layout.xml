@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.DetailPerkembanganActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kedua">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/btnKembali"
+                android:background="@drawable/transparent_background"
+                android:contentDescription="button kembali"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/kembali_icon"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Detail Perkembangan"
+                android:textColor="@color/white"
+                android:layout_gravity="center|left"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="artikel">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp">
+            <TextView
+                android:id="@+id/txt_id_perkembangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID 00019102023"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/txt_tanggal_perkembangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Tanggal : 19 - 10 - 2023"
+                android:fontFamily="@font/poppins" />
+            <TextView
+                android:id="@+id/txt_tanggal_diupdate_perkembangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Tanggal Diperbarui : 19 - 10 - 2023"
+                android:fontFamily="@font/poppins" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Detail"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:elevation="20dp">
+                <TextView
+                    android:id="@+id/txt_minggu_perkembangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minggu ke - 1"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="15sp"
+                    android:padding="8dp"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pakan Pakai : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_pakan_pakai_perkembangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="220 Sak"
+                        android:textColor="@color/black"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pakan Sisa : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_pakan_sisa_perkembangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="118 Sak"
+                        android:textColor="@color/black"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kematian : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_kematian_perkembangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="35 Ekor"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Peternakan : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_nama_peternakan_perkembangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="peternakan erik"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Afkir : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_afkir_perkembangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="35 Ekor"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_grey"
+                app:cardBackgroundColor="#D9D9D9"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bobot : "
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:id="@+id/txt_bobot_perkembangan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.420 Kg"
+                        android:gravity="end"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:padding="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:id="@+id/btn_edit_perkembangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit"
+                    android:background="@drawable/bg_btn_edit"
+                    android:paddingHorizontal="50dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_hapus_perkembangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:paddingHorizontal="40dp"
+                    android:background="@drawable/bg_btn_hapus"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

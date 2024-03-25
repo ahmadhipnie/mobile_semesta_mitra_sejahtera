@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailArtikelActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kedua">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btnKembali"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/kembali_icon"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Artikel"
+                android:textColor="@color/white"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="artikel">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/txt_judul_artikel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul Artikel"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="30sp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txt_deskripsi_artikel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:letterSpacing="0"
+                android:textSize="20sp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/lorem_ipsum"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

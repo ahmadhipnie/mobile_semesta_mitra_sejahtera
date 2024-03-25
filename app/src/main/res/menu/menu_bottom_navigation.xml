@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_dashboard"
+        android:icon="@drawable/dashboard_icon"
+        android:title="Beranda"
+        android:iconTintMode="multiply"/>
+    <item
+        android:id="@+id/menu_perkembangan"
+        android:icon="@drawable/perkembangan_icon"
+        android:title="Perkembangan"
+        />
+    <item
+        android:id="@+id/jadwal_panen"
+        android:icon="@drawable/jadwal_panen_icon"
+        android:title="Jadwal Panen" />
+    <item
+        android:id="@+id/menu_akun"
+        android:icon="@drawable/akun_icon"
+        android:title="Akun" />
+</menu>

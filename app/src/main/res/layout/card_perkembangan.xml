@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="10dp"
+     android:layout_marginHorizontal="5dp"
+    android:background="@drawable/bg_card"
+    app:cardCornerRadius="20dp"
+    android:elevation="100dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="20dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_card"
+                android:src="@drawable/contoh_gambar_artikel"
+                android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_id_perkembangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID 00019102023"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="18dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_bobot_perkembangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.200 kg"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/poppins_medium"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/gray"
+                        android:text=" | "/>
+                    <TextView
+                        android:id="@+id/txt_tanggal_perkembangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="19-10-2023"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_minggu_ke_perkembangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Minggu ke - "
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="18dp"
+                        android:fontFamily="@font/poppins_medium"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_nama_peternakan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="nama peternakan"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="18dp"
+                        android:fontFamily="@font/poppins_medium"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#eeeeee"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="end">
+            <TextView
+                android:id="@+id/btn_lihat_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lihat Detail"
+                android:paddingHorizontal="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/tema"
+                android:textSize="15sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

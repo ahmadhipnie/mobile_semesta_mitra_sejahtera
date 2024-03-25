@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.TambahPerkembanganActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kedua">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/btnKembali"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/kembali_icon"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Edit Perkembangan"
+                android:textColor="@color/white"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/transparent_background">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minggu ke -"
+                    android:textColor="#2E417B"
+                    android:fontFamily="@font/poppins_medium"/>
+                <EditText
+                    android:id="@+id/etMingguKe"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textAllCaps="false"
+                    android:inputType="number"
+                    android:hint="masukkan minggu perkembangan"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/rounded_editext"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pakan Pakai (Sak)"
+                    android:textColor="#2E417B"
+                    android:fontFamily="@font/poppins_medium"/>
+                <EditText
+                    android:id="@+id/etPakanPakai"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="masukkan pakan pakai"
+                    android:inputType="numberDecimal"
+                    android:textAllCaps="false"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/rounded_editext"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pakan Sisa (Sak)"
+                    android:textColor="#2E417B"
+                    android:fontFamily="@font/poppins_medium"/>
+                <EditText
+                    android:id="@+id/etPakanSisa"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="masukkan pakan sisa"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/gray"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rounded_editext"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kematian (Ekor)"
+                    android:textColor="#2E417B"
+                    android:fontFamily="@font/poppins_medium"/>
+                <EditText
+                    android:id="@+id/etKematian"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textColorHint="@color/gray"
+                    android:hint="masukkan kematian ayam"
+                    android:inputType="numberDecimal"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rounded_editext"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Afkir (Ekor)"
+                    android:textColor="#2E417B"
+                    android:fontFamily="@font/poppins_medium"/>
+                <EditText
+                    android:id="@+id/etAfkir"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textColorHint="@color/gray"
+                    android:hint="masukkan afkir"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/rounded_editext"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bobot Ayam (Kg)"
+                    android:textColor="#2E417B"
+                    android:fontFamily="@font/poppins_medium"/>
+                <EditText
+                    android:id="@+id/etBobot"
+                    android:textColorHint="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="masukkan bobot ayam"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/rounded_editext"
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_tambah"
+                android:text="Perbarui Data"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
